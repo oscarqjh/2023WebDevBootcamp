@@ -71,3 +71,24 @@ Selector
 #idname{} //id selector
 *{} //select all
 h1[attribute="value"]{} //attribute selector
+
+Html properties
+background-color
+color
+
+color hunt
+
+Units:
+px, pt, em(parent), rem(root, recommended)
+
+font-weight: normal, bold, normal bold, lighter, bolder, number
+
+font-family: Helvetica, sans-serif, etc
+
+text-align: center, right, left, start, end, etc
+
+border: tickness style(solid/dashed) color(black,etc) 
+border-top: thickness
+border-width: 4args or 2 args
+padding: 20px //pushes out the border from box by x px
+margin: outside the border
