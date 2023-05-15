@@ -1,0 +1,73 @@
+DNS - DOMAIN NAME SYSTEM
+ISP - INTERNET SERVICE PROVIDER
+html (Hypertext Markup Language) - content and structure of the website
+css - styling the website such as background color or button text
+js - functionality of website. turns static website into something interactable
+
+documentation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+newsletter - https://www.appbrewery.co/p/newsletter/
+
+tag
+<h1></h1> - headings from 1 to 6
+<p></p> - paragraph
+<hr /> - void element, a honrizontal rule/divider element
+<br /> - break line
+
+unordered list (ul)
+<ul>
+ <li>list1</li>
+ <li>list2</li>
+</ul>
+
+ordered list (ol)
+<ol>
+ <li></li>
+ <li></li>
+</ol>
+
+attributes
+<tag attribute=value anotherattribute=value>Content</tag>
+<li><a href="https://www.google.com/">Google</a></li>
+
+image
+<img src="./source" />
+
+HTML boilerplate
+
+<!DOCTYPE html>		// html version
+<html lang="en">	// language
+    <head>		//where you put important information about the website that the user does not need to see
+        <meta charset="UTF-8">	// charset to use
+        <title>My Website</title>	//title of tab
+    </head>
+</html>
+
+lorem ipsum - a tradition to use to fill in paragraph of text with place holder text
+
+Inline CSS - used to adding styles to just a single element (not recommended)
+<html style="property: value"></html>
+
+Internal CSS - used for single page website
+<html>
+	<head>
+		<style>
+			html{
+				property: value;
+			}
+		</style>
+	</head>
+</html>
+
+External CSS - coded in CSS file, recommended and used for multi-page website
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+</html>
+
+Selector
+<h1 class="classname" id="idname"></h1>
+.classname{} //class selector
+#idname{} //id selector
+*{} //select all
+h1[attribute="value"]{} //attribute selector
