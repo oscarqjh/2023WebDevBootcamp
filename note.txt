@@ -92,3 +92,17 @@ border-top: thickness
 border-width: 4args or 2 args
 padding: 20px //pushes out the border from box by x px
 margin: outside the border
+
+Cascading priority:
+
+1) element
+2) class
+3) attribute
+4) id
+
+Type:
+1) External
+2) Internal
+3) Inline
+
+!important - special keyword that gives priority
