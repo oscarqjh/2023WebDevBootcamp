@@ -106,3 +106,16 @@ Type:
 3) Inline
 
 !important - special keyword that gives priority
+
+combined css selector:
+Group - apply to both selector
+selector, selector {code}
+
+descendant - access element inside a branch
+.div p{code}
+
+child:
+selector > selector {code}
+
+chaining - to get really specfic element
+selectorselector {code}
