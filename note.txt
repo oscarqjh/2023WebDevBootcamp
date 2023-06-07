@@ -164,3 +164,28 @@ sizing - min/max width > flex-basis > width > content width
 flex-grow: 0; // limits the ability to grow
 flex-shrink: 0; // limits the ability to shrink
 flex: grow shrink basis; or flex: 1/2/3/4...;
+
+Grid
+make a <div class="container'> to enclose all the element we want
+.container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr; // can combine with grid-template: 10px 20px / 20px 10px;
+	grid-auto-rows: 200px; // defines the row size for excess elements
+	gap: 10px;
+}
+
+.item {
+	grid-column: span 2; // no of col this item takes, short hand for the below 2 line
+	grid-column-start: 2; // which line it starts
+	grid-column-end: 4; // or use -1,-2, etc
+	order: 1; // to determine the arrangement of items
+	grid-area: 2/1/3/2; short hand for grid-row-start/end and grid-column-start/end
+}
+
+Grid-sizing
+Fixed - grid-template-rows: 1px 2rem; not responsive
+Auto - grid-template-columns: 100px auto; each row will try to fit to the horizontal available space
+Fractional - grid-template-rows: 1fr 1fr; elements will always try to fit to ratio provided
+MinMax - grid-template-rows: 1px minmax(400px, 800px); set max and min
+Repeat - grid-template-rows: repeat(2, 200px); repeat 2 times with 200px size

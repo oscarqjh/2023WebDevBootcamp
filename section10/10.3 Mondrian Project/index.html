@@ -19,11 +19,102 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 329px 198px 171px 50px;
+      grid-template-rows: 423px 140px 155px 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-column: span 1;
+      border: 9px solid #000;
+      border-left: none;
+      border-top: none;
+    }
+
+    .white-top-right {
+      background-color: #F0F1EC;
+      grid-column: 2 / -1;
+      grid-row: 1 / 1;
+      border-bottom: 9px solid #000;
+    }
+
+    .white-mid-left {
+      background-color: #F0F1EC;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4;
+      border: 9px solid #000;
+      border-top: none;
+    }
+
+    .white-mid {
+      background-color: #F0F1EC;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+      border: 9px solid #000;
+      border-top: none;
+      border-left: none;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 2 / 4 / 3 / 5;
+      border-bottom: 10px solid #000;
+    }
+
+    .white-bot-right {
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / 5 / 5;
+      border-top:  9px solid #000;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-area: 4 / 3 / 5 / 4;
+      border-right: 9px solid #000;
+      border-left: 9px solid #000;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .white-bot-left {
+      background-color: #F0F1EC;
+      grid-area: 4 / 1 / 5 / 2;
+      border-right: 9px solid #000;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+
+  <div class="grid-container">
+    <div class="red"></div>
+    <div class="white-mid"></div>
+    <div class="white-mid-left"></div>
+    <div class="white-top-right"></div>
+    <div class="white-bot-right"></div>
+    <div class="white-bot-left"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+    <div class="yellow"></div>
+  </div>
+
 </body>
 
 </html>
