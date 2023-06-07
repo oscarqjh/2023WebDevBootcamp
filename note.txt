@@ -6,12 +6,15 @@ js - functionality of website. turns static website into something interactable
 
 documentation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 newsletter - https://www.appbrewery.co/p/newsletter/
+colorhunt - https://colorhunt.co/
+css cheat sheet - https://htmlcheatsheet.com/css/
 
 tag
 <h1></h1> - headings from 1 to 6
 <p></p> - paragraph
 <hr /> - void element, a honrizontal rule/divider element
 <br /> - break line
+<a href="link"></a> - hyperlink
 
 unordered list (ul)
 <ul>
@@ -87,6 +90,9 @@ font-family: Helvetica, sans-serif, etc
 
 text-align: center, right, left, start, end, etc
 
+Box model
+content -> padding -> border -> margin
+
 border: tickness style(solid/dashed) color(black,etc) 
 border-top: thickness
 border-width: 4args or 2 args
@@ -119,3 +125,42 @@ selector > selector {code}
 
 chaining - to get really specfic element
 selectorselector {code}
+
+CSS positioning
+Fixed - will always stay on screen
+Absolute - absolute to a ancestor
+relative - relative to its default position
+static - default position.
+
+CSS Display
+Inline - side by side
+Block - one block by block
+Inline-Block - allows inline to have block properties such as height and width
+
+CSS Float
+float: left; // allows wrapping of text by making the element float
+clear: left; // clears any responsibility to wrap around any floaters
+
+Responsiveness
+Media Query - @media (max-width: 600px){css code for width >= 600px}
+CSS Grid - premade grid box, display: grid;
+CSS Flexbox - useful for 1D layouts, display: flex;
+Bo9otstrap Framework - can be imported templates made by others
+
+Flex box
+make a <div class="container'> to enclose all the element we want
+.container {
+	display: flex; // can be inline-flex this make the width of flexbox match the biggest element
+	gap: 10px;
+	flex-direction: row; // or column
+	flex-basis: 100px; // set element's length depending on flex-direciton (put in children), the initial starting value of shrinking and growing
+	order: 0; // determines the order the element is in the flexbox (put in children)
+	flex-wrap: nowrap; // or wrap to wrap the element to next line if space runs out
+	justify-content: center; // main-axis distribution
+	align-items: flex-start; // cross-axis distribution, when flex-wrap is nowrap
+	align-content: center; // when flex-wrap is wrap
+}
+sizing - min/max width > flex-basis > width > content width
+flex-grow: 0; // limits the ability to grow
+flex-shrink: 0; // limits the ability to shrink
+flex: grow shrink basis; or flex: 1/2/3/4...;
