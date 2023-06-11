@@ -1,0 +1,59 @@
+.hero {
+    background-image:
+    linear-gradient(to top, rgb(255, 255, 255), rgba(95, 13, 19, 0.73)),
+    url('./assets/2159514.jpg');
+    height: 100vh;
+}
+
+.hero * {
+    color: rgba(255, 255, 255, 0.822);
+    text-align: left;
+}
+
+.hero h1 {
+    font-family: 'Poiret One', cursive;
+    font-weight: 1500;
+    font-size: 12rem;
+    margin-top: 0;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(107, 41, 41, 0.822);
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.intro {
+    height: 60vh;
+}
+
+#profile {
+    margin-top: 10%;
+}
+
+#profile * {
+    margin-top: 10%;
+}
+
+#profile h2 {
+    font-size: 3rem;
+}
+
+#art-img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.contact {
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255), rgba(95, 13, 19, 0.73)),
+    url('./assets/2159514.jpg');
+    height: 50vh;
+}

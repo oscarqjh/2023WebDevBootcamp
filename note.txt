@@ -189,3 +189,53 @@ Auto - grid-template-columns: 100px auto; each row will try to fit to the horizo
 Fractional - grid-template-rows: 1fr 1fr; elements will always try to fit to ratio provided
 MinMax - grid-template-rows: 1px minmax(400px, 800px); set max and min
 Repeat - grid-template-rows: repeat(2, 200px); repeat 2 times with 200px size
+
+Bootstrap - for fast deployment of mobile first sites
+Layout
+12 column system - div container > div row > items
+<div class="container">
+	<div class="row">
+		<div class="col">Hello</div>
+	</div>
+</div>
+col-2 means the div occupies 2 col, col-4 occupies 4, etc
+breakpoints - sm md lg xl xxl
+define multiple breakpoint -> col-sm-12 col-md-8 col-lg-4
+
+w3school - bootstrap template
+
+Web design
+https://color.adobe.com/create/color-wheel - adobe color wheel
+https://colorhunt.co/ - color hunt
+Analogous Colours - color next to each other on the color wheel - works well together
+Complementary Colours - opposite on the color wheel - makes the item pops out more (do not do for text, do for logo)
+
+Typography
+Serif - Old/Transitional/Modern (traditional, stable, respectable)
+Font: Didot
+
+San-Serifs Sensible, simple, straightforward
+Font: Humanist, Grotesque (humanist is highly readable)
+
+Advise: use atmost 2 fonts, go for similar moods and time era, contrast serif-ness and weights
+do not use comic sans!
+
+UI Design
+Rules of heiriarchy 
+- color: brighter color have higher hieriarchy
+- size: larger more attention grabbing
+- layout
+- alignment: left align elements that are related, reduce the number of alignment points
+- line length: 40-60 characters a line
+- white space: declutter by using whitespace
+- audience: use elements that resonates with the target audience, e.g. children vs adult
+
+UX Design
+- simplicity: dont load a webpage with too much content and functionality
+- consistency: dont change up designs too much on different platforms
+- reading patterns: F-pattern, start the top left then down. so try to use a F-layout
+Z-pattern is another common pattern
+- all platform design: mobile responsive, accomodate both mobile and wide screen, dont put too much banners
+
+Daily UI - for practising ui skills
+
