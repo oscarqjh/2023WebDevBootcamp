@@ -1,0 +1,12 @@
+# first challenge
+var target = document.querySelector("ul").lastElementChild;
+target.innerHTML = "Hello World";
+
+# second challenge
+document.querySelector("li a").style.color = "Red";
+
+# third challenge
+document.querySelector("button").style.backgroundColor = "Yellow";
+
+# fourth challenge
+document.querySelector("h1").classList.toggle("huge");

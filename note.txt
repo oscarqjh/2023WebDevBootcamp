@@ -276,3 +276,20 @@ array.pop();
 inline js - onload=""
 internal js - <script type="text/javascript"></script>
 external js -<script src="index.js"></script>
+
+Document Object Moddel
+document.firstElementChild.lastElementChild
+object.style.color = "red";
+document.querySelector("input").click(); //querySelector selects with css selector. click() simulates a mouse click
+document.getElementsByTagName("selector")[index]; // indexed like an array
+document.getElementById("id selector"); // returns the object with the target id
+document.querySelectorAll("HTMLselector"); // returns an array all match. while querySelector only returns the first match
+
+HTML DOM style
+document.object.classList; // returns all class tag that this object possess
+document.object.classList.toggle("some class tag"); // toggle btw add/remove of a class tag.
+document.object.innerHTML; // returns everything inside the tag
+document.object.textContent; // returns only the string content inside the tag
+document.object.attributes; // returns all attibutes of a element as an array
+document.object.getAttribute("attribute name"); // returns the attribute
+document.object.setAttribute("attribute name") = "some value" // set the attribute content
