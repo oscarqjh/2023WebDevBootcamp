@@ -239,3 +239,40 @@ Z-pattern is another common pattern
 
 Daily UI - for practising ui skills
 
+Javascript
+documentation - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+Datatypes - string, number, boolean
+js input - prompt("question");
+js output - alert() or console.log()
+Variables - var someVar = 12;
+
+naming convention - meaningful name, cannot be only keyword, cannot start with number, cannot connect with -, use camel casing
+
+string concatenation - using +, "Hello" + "World!"
+
+string len - get the length of string by using var.length;
+
+string slicing - var.slice(0,1) , from index 0 to 1, not including 1
+
+toUpperCase() - change all to uppercase
+toLowerCase() - change all to lowercase
+Math.random() - random no. from 0-0.9999
+
+Arithmetic and modulo -> +,-,/,%
+increment and decrement -> ++, --, +=, -=, *=, /=,  
+
+Function - function someFunction(parameter) {code}
+Function output - return;
+js equality - ===, !==, >=, <=, <, >
+== vs === -> === check for data types while == just checks for value
+
+array -> var guest = [];
+var array = new Array();
+array.push();
+array.includes();
+array.pop();
+
+inline js - onload=""
+internal js - <script type="text/javascript"></script>
+external js -<script src="index.js"></script>
