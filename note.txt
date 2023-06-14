@@ -293,3 +293,32 @@ document.object.textContent; // returns only the string content inside the tag
 document.object.attributes; // returns all attibutes of a element as an array
 document.object.getAttribute("attribute name"); // returns the attribute
 document.object.setAttribute("attribute name") = "some value" // set the attribute content
+Event listener
+object.addEventListerner(type, function);
+higher order function - 
+function calculator(num1, num2, operator){
+	return operator(num1, num2);
+} // operator is a function
+
+sound - var audio = new Audio("filename.mp3"); audio.play();
+
+js objects
+var object = {
+	name: "someName",
+	age: "someAge",
+	property: "someProperty"
+}
+
+constructor
+function Object (name, age, property) {
+	this.name = name;
+	this.age = age;
+	this.property = property;
+	this.someFunction: function() {
+		//some code
+		return something;
+	}
+}
+
+callback function
+timeout function
