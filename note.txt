@@ -322,3 +322,35 @@ function Object (name, age, property) {
 
 callback function
 timeout function
+
+JQuery - a js library
+to use, get cdn from the jquery website
+$("h1").css("color", "red");
+$ - short hand to get object from selector
+$(document).ready(function() {code}) // a round about way to safe guard against ready code before jquery is ready
+
+selecting element - $("css selector") 
+e.g. $("button") selects all button element
+
+Jquery styles - object.css("property name", "new value") sets the value or object.css("property name") get the value
+$().addClass("classTag") // same as classList.add(); allows adding multiple classes
+$().removeClass("classTag") // same as add
+$().hasClass("classTag") // returns boolean if has class
+$().text("newText") // change text
+$().html("new HTML") // change inner HTML
+$().attr("attr name", "new value") // sets value is 2 argument provided, or get if 1 argument provided
+$().click(function(){code}); // add a event listener "click" , can be other events. selects all elements with the css selector
+$().keydown(function(e){code}); // same as above
+$().on("event", function(){code}); // more flexible way to add event listener
+$("h1").before("<h1>new h1</h1>"); // add a new element before selected element
+$().after(); // same as above but after
+$().prepend(); // add to before selected element's content
+$().append(); // same as above but after
+$().remove(); // remove selected elements
+$().hide() or .show() or .toggle(); // does what it says to the elements
+$().fadeIn() or .fadeOut() or fadeToggle();
+$().slideUp() or .slideIn() or slideToggle();
+$().animate({opacity: 0.5}); // only numerical properties 
+
+
+Minification -minifier.org removes all xtra comments or space to save space
