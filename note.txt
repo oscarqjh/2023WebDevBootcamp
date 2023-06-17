@@ -372,3 +372,41 @@ Node.js
 Node (REPL) Read Eval Print Loop - an environment where user input is read by computer and a respond is returned
 Native Modules 
 File system - to edit local files
+
+NPM - node package manager
+npm init
+inquirer, qr-code, sillynames, heronames
+
+Expressjs - specialised node for server backend
+app.listen(port, function(request, response){}); // get request 
+app.get("/", callback); // start server
+app.post("/", function(req, res) { } // to respond
+nodemon - a api to install, helps restart server automatically everytime there is a change
+res.sendFile(__dirname); - gives the filepath of current file no matter where it is
+<form action="/" method="post"> - when using backend, action sending to the route you want
+
+	import { fileURLToPath } from 'url';
+	import { dirname } from 'path';
+
+	const __filename = fileURLToPath(import.meta.url);
+	const __dirname = dirname(__filename);
+
+// write this if want to use __dirname
+
+npm i body-parser
+app.use(bodyParser.urlencoded({extended: true})); // allow req.body to get info from routes
+
+////// template //////
+import express from 'express';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import bodyParser from 'body-parser';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const app = express();
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+///////////////////////
