@@ -354,3 +354,21 @@ $().animate({opacity: 0.5}); // only numerical properties
 
 
 Minification -minifier.org removes all xtra comments or space to save space
+
+CLI
+touch filename.ext // makes a file
+start filename.ext // open a file
+rm filename.ext // delete a file
+rm -r directoryname/ // delete a directory
+https://www.learnenough.com/command-line-tutorial // learn more cli
+
+backend
+consists of the server, application, and database
+server -> a computer that is on 24/7
+application -> logic of how we respond to requests from user to the server
+database -> store user data
+
+Node.js
+Node (REPL) Read Eval Print Loop - an environment where user input is read by computer and a respond is returned
+Native Modules 
+File system - to edit local files

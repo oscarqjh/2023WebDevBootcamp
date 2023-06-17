@@ -17,7 +17,7 @@ $(".btn").on("mousedown", function() {
     var check = checkAnswer();
     if (check && (userClickedPattern.length === gamePattern.length)) {
         $("h1").text("Correct!");
-        setTimeout(nextSequence(), 3000);
+        setTimeout(nextSequence(), 2000);
     }
     else if(!check && started) { // wrong ans
         resetGame();
@@ -91,13 +91,14 @@ function resetGame() {
     setTimeout(function() {
         $("body").removeClass("game-over");
     }, 200);
-    resetStat();
+    
     setTimeout(function() {
         $("h1").text("Resetting Game...");
         setTimeout(function() {
             $("h1").text("Press A Key to Start");
         }, 1000);
     }, 1000);
+    resetStat();
 }
 
 // reset stat
