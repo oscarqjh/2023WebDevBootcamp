@@ -1,0 +1,30 @@
+git/github
+git init // to initialist repository
+git add . // stage everything
+git commit -m "message"// commit change
+
+version control
+git status // show current staging, commits
+git log // show commit histories
+git diff <filename> // check diff of file with previous commit
+git checkout // rollback to previous commits
+
+github remote
+first create a repository on github
+git remote add origin <repo url> // create remote repository
+git push -u origin main // push local repository to remote repository
+git rm --cached -r . // remove all from staging area
+
+git ignore
+touch .gitignore // create a git ignore file
+open .gitignore // open the file
+////inside .gitignore////
+.DS_Store
+*.txt // * is wild card, anything with .txt will be ignored
+# pound sign is comment
+//////////////////////////
+
+git clone <url> // clone remote repo to local storage
+git branch <branch-name> // make branch
+git checkout <branch-name> // switch to a existing branch
+git merge <branch-name> // merge branch
