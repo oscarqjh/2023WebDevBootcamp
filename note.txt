@@ -476,3 +476,29 @@ git clone <url> // clone remote repo to local storage
 git branch <branch-name> // make branch
 git checkout <branch-name> // switch to a existing branch
 git merge <branch-name> // merge branch
+git rebase <branch-name> // rebase a branch to another branch
+git branch -f main <commit-hash> // move main to certain commit
+git reset <commit> // reverse change by moving HEAD back by 1
+git revert <commit> // commits a new change that is identical as the previous commit
+git cherry-pick <commit> [commit,..] // commits selected commit on working branch
+
+HTML templating
+EJS - Embedded JavaScript templating
+have to create a folder called 'views'
+app.set('view engine', 'ejs'); // nid to set this
+res.render('page', {var: 'var'}) // to render a page
+date.tolocaledatestring() // native method to format date
+-webkit-linear-gradient() // for gradient background
+<% %> // snippets
+<%= %> // dynamic output
+<%- -%. // layouts
+
+modularisation // using node
+create new .js file
+functionise it
+export default <functionName> 
+const func = {
+	func1() {},
+	func2() {}
+}
+then import

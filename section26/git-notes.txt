@@ -28,3 +28,10 @@ git clone <url> // clone remote repo to local storage
 git branch <branch-name> // make branch
 git checkout <branch-name> // switch to a existing branch
 git merge <branch-name> // merge branch
+git rebase <branch-name> // rebase a branch to another branch
+git branch -f main <commit-hash> // move main to certain commit
+git reset <commit> // reverse change by moving HEAD back by 1
+git revert <commit> // commits a new change that is identical as the previous commit
+git cherry-pick <commit> [commit,..] // commits selected commit on working branch
+
+https://learngitbranching.js.org/
