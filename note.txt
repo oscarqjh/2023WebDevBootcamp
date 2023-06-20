@@ -8,6 +8,7 @@ documentation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 newsletter - https://www.appbrewery.co/p/newsletter/
 colorhunt - https://colorhunt.co/
 css cheat sheet - https://htmlcheatsheet.com/css/
+app brewery course material - https://appbrewery.com/p/web-development-course-resources
 
 tag
 <h1></h1> - headings from 1 to 6
@@ -398,9 +399,9 @@ app.use(bodyParser.urlencoded({extended: true})); // allow req.body to get info 
 
 ////// template //////
 import express from 'express';
+import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import bodyParser from 'body-parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -410,3 +411,53 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 ///////////////////////
+
+API - application programming interface
+API Endpoint - a url for api
+Postman - for api testing
+JSON - javascript object notation
+
+parsing JSON in api
+native - using https
+https.get(url, function(res){
+	response.on("data", function(data) {
+		const data = JSON.parse(data);
+	})
+})
+
+res.write() // can do this many times
+res.send() // only do this once
+
+Mailchimp API - for email collection
+
+website set up checklist
+create project directory
+make app.js and index.html
+npm init
+npm i express body-parser
+change typer to modules
+import
+app = express();
+app.use(bodyParser.urlencoded({extended: true})
+app.listen at defined port
+
+https.request() // to post data to server
+
+heroku - server running company
+app.listen(process.env.PORT, function() {}); // have to do this for dynamic port for heroku
+
+git/github
+git init // to initialist repository
+git add . // stage everything
+git commit -m "message"// commit change
+
+version control
+git status // show current staging, commits
+git log // show commit histories
+git diff <filename> // check diff of file with previous commit
+git checkout // rollback to previous commits
+
+github remote
+first create a repository on github
+git remote add origin <repo url> // create remote repository
+git push -u origin main // push local repository to remote repository
