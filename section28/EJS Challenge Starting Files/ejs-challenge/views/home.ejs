@@ -1,0 +1,16 @@
+<%- include("./partials/header") -%>
+
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+
+<% posts.forEach(post => { %>
+    <h1 class="title"><%= post.title %></h1>
+    <div class="flex">
+        <div class="truncate" data-longstring="<%= post.mainContent %>"></div>
+        <form action="/post" method="post"></form>
+        <a href="/posts/<%= post.title %>">Read more</a>
+    </div>
+    
+<% }) %>
+
+<%- include("./partials/footer") -%>
