@@ -510,3 +510,70 @@ app.get('/home/:param', function(req,res) {
 	res.send(req.params);
 }
 use req.params to get the param
+
+DATABASE
+SQL - MySQL, PostgreSQL
+sql db will group data into tables, less scalable, more relational
+NoSQL - mongoDB, redis
+no-sql data are represented as JSON objects, more scalable, less relational
+
+SQLite
+CREATE TABLE tableName ( // to create a table
+	id INT NOT NULL,
+	name STRING,
+	price MONEY,
+	PRIMARY KEY (id)
+)
+
+INSERT INTO // to insert data
+SELECT // read data
+WHERE // condition for which row to read
+UPDATE <table> SET <col> WHERE <row condition> // update a value
+ALTER TABLE <table> ADD <col name, datatype> // add a col
+DELETE FROM <table> WHERE <condition> // delete a value
+INNER JOIN // search and join 2 table
+
+MONGODB
+use shopDB // create a db
+db.<collectionName>.insertOne({object}) // insert entries into db
+db.collection.find() // to query the db
+db.products.updateOne({_id: 1}, {$set: {stock: 32}}) // edit value
+db.products.deleteOne({_id: 2}) // delete entry
+
+mongoDB native driver
+npm i mongodb
+
+mongoose
+import mongoose from 'mongoose';
+mongoose.connect('mongodb://127.0.0.1:27017/fruitsDB');
+const FruitSchema = mongoose.Schema({ 
+    name: String,
+    rating: Number,
+    review: String 
+});
+
+const Fruit = mongoose.model('Fruit', FruitSchema);
+
+const fruit = new Fruit({
+    name: 'Apple',
+    rating: 7,
+    review: 'Good'
+});
+
+fruit.save() // insert 1 entry
+Fruit.insertMany([ob1, ob2, ob3], function(err) {if(err){console.log(err)} else {console.log('success')}) // insert many entry
+Fruit.find().then(fruits => {console.log(fruits)}); // to query the db
+mongoose.connection.close(); // close the db
+Fruit.updateOne() // update entry
+Fruit.deleteOne() // delete entry
+
+data validation
+const FruitSchema = mongoose.Schema({ 
+    name: String,
+    rating: {
+        type: Number,
+        min: 1,
+        max: 10
+    },
+    review: String 
+});
