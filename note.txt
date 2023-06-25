@@ -577,3 +577,6 @@ const FruitSchema = mongoose.Schema({
     },
     review: String 
 });
+
+Representational State Transfer (REST) API - a architechtural style
+
