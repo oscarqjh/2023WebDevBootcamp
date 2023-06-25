@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import mongoose from "mongoose";
 import _ from 'lodash';
+import 'dotenv/config'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,7 +15,8 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 // database
-mongoose.connect('mongodb://127.0.0.1:27017/todolistDB');
+const mongoDB_pw = process.env.MONGODB_PW;
+mongoose.connect(`mongodb+srv://oscarqjh:${mongoDB_pw}@cluster0.781pnje.mongodb.net/todolistDB`);
 
 // items model
 const itemSchema = new mongoose.Schema({
