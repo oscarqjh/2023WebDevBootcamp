@@ -579,4 +579,10 @@ const FruitSchema = mongoose.Schema({
 });
 
 Representational State Transfer (REST) API - a architechtural style
+GET (READ) - same as read
+POST - same as CREATE, create a entry containing some data from server
+PUT - update some information by sending a whole new entry to replace the old one
+PATCH - only send the piece of data that nids to be changed instead of a entire entry
+DELETE - remove some entry
 
+route pattern - search up RESTful routing
