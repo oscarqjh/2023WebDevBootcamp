@@ -590,3 +590,11 @@ Robo 3T - mongodb gui
 
 mongoose encryption
 npm i mongoose-encryption
+
+hashing
+npm i md5
+
+cookie and session
+npm i passport passport-local passport-local-mongoose express-session
+
+OAuth - open authorization
