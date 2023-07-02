@@ -586,3 +586,7 @@ PATCH - only send the piece of data that nids to be changed instead of a entire 
 DELETE - remove some entry
 
 route pattern - search up RESTful routing
+Robo 3T - mongodb gui
+
+mongoose encryption
+npm i mongoose-encryption
