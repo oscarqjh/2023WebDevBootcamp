@@ -598,3 +598,23 @@ cookie and session
 npm i passport passport-local passport-local-mongoose express-session
 
 OAuth - open authorization
+
+ES6+ modules
+export default <functionName>;
+or
+export {func1, func2, func3};
+import func from "./path";
+or
+import {func1, func2, func3} from "./path";
+
+Reactjs - front end framework
+<div id="root"><div/>
+inline js -> style={{color:"red"}} // have to be a js object instead of a string
+react props
+function Note(props) {
+	return <h1>props.prop1</h1>;
+}
+<Note prop1="test" />
+
+
+
