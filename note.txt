@@ -438,7 +438,7 @@ npm i express body-parser
 change typer to modules
 import
 app = express();
-app.use(bodyParser.urlencoded({extended: true})
+app.use(bodyParser.urlencoded({extended: true}))
 app.listen at defined port
 
 https.request() // to post data to server
