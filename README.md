@@ -23,7 +23,7 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 - React.js
 - MongoDB
 <details>
-<summary>More:</summary>
+<summary>Show more:</summary>
 
 + jQuery
 + Git, GitHub and Version Control
