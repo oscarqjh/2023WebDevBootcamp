@@ -660,3 +660,9 @@ onChange={(event) => {
 react spread operator
 const array1 = ["1", "2", "3"];
 const array2 = ["4", "5", "6", ...array1]; // this combines array1 and array2, works for object too
+
+npm install @material-ui/icons
+
+"homepage": "https://oscarqjh.github.io/2023WebDevBootcamp-KeeperApp",
+"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",

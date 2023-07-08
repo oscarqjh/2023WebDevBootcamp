@@ -10,7 +10,6 @@ function CreateArea(props) {
   });
 
   const [isFocused, setFocused] = React.useState(false);
-  const [alsoFocused, setAlsoFocused] = React.useState(false);
 
   function handleFocus() {
     setFocused(true);
@@ -18,14 +17,6 @@ function CreateArea(props) {
 
   function handleBlur() {
     setFocused(false);
-  }
-
-  function handleAlsoFocus() {
-    setAlsoFocused(true);
-  }
-
-  function handleAlsoBlur() {
-    setAlsoFocused(false);
   }
 
   function handleChange(event) {
@@ -47,13 +38,12 @@ function CreateArea(props) {
           title: "",
           content: ""
         });
+        handleBlur();
         event.preventDefault();
       }}>
         
-        {(isFocused || alsoFocused) && 
+        {(isFocused) && 
           <input 
-            onFocus={handleAlsoFocus}
-            onBlur={handleAlsoBlur}
             onChange={handleChange} 
             value={newNote.title}
             name="title" 
@@ -67,17 +57,15 @@ function CreateArea(props) {
           value={newNote.content}
           name="content" 
           placeholder="Take a note..." 
-          rows={(isFocused || alsoFocused)?"3":"1"} 
+          rows={(isFocused)?"3":"1"} 
           required
         />
-        <Zoom in={(isFocused || alsoFocused)?true:false}>
-          <Fab color="warning" aria-label="add">
+        <Zoom in={(isFocused)?true:false}>
+          <Fab type="submit" color="warning" aria-label="add">
             <AddIcon />
           </Fab>
         </Zoom>
           
-        
-        
         
       </form>
     </div>
