@@ -78,7 +78,7 @@ Check out the game [here](https://oscarqjh.github.io/2023WebDevBootcamp-Drumkit/
 Source code can be found [here] 
 
 #### 2.4 Simon Game
-This is a pure front-end arcade game made to practise Javascript. It is pretty fun.   
+This is a pure front-end arcade game made to practise **Javascript**. It is pretty fun.   
 
 <img src="./assets/simon.png" width="500" height="300">  
 
@@ -86,7 +86,7 @@ Check out the game [here](https://oscarqjh.github.io/2023WebDevBootcamp-SimonGam
 Source code can be found [here](https://github.com/oscarqjh/2023WebDevBootcamp-SimonGame).   
 
 #### 2.5 Todo List Website
-This is a website to make your to-do list. This is the first proper project made with backend capability, meaning that data can be persisted past each session. Note: However since I am using free-tier to host the website on render, it can take a long time for the website to load.   
+This is a website to make your to-do list. This is the first proper project made with backend capability using **MongoDB**, meaning that data can be persisted past each session. Note: However since I am using free-tier to host the website on render, it can take a long time for the website to load.   
 
 <img src="./assets/todo.png" width="400" height="400">  
 
