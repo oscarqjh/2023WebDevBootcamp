@@ -1,7 +1,6 @@
 import React from "react";
 import AddIcon from '@mui/icons-material/Add';
 import Fab from '@mui/material/Fab';
-import Tooltip from '@mui/material/Tooltip';
 import Zoom from '@mui/material/Zoom';
 
 function CreateArea(props) {
@@ -11,6 +10,7 @@ function CreateArea(props) {
   });
 
   const [isFocused, setFocused] = React.useState(false);
+  const [alsoFocused, setAlsoFocused] = React.useState(false);
 
   function handleFocus() {
     setFocused(true);
@@ -18,6 +18,14 @@ function CreateArea(props) {
 
   function handleBlur() {
     setFocused(false);
+  }
+
+  function handleAlsoFocus() {
+    setAlsoFocused(true);
+  }
+
+  function handleAlsoBlur() {
+    setAlsoFocused(false);
   }
 
   function handleChange(event) {
@@ -42,8 +50,10 @@ function CreateArea(props) {
         event.preventDefault();
       }}>
         
-        {isFocused && 
+        {(isFocused || alsoFocused) && 
           <input 
+            onFocus={handleAlsoFocus}
+            onBlur={handleAlsoBlur}
             onChange={handleChange} 
             value={newNote.title}
             name="title" 
@@ -53,15 +63,14 @@ function CreateArea(props) {
         }
         <textarea 
           onFocus={handleFocus}
-          onBlur={handleBlur}
           onChange={handleChange} 
           value={newNote.content}
           name="content" 
           placeholder="Take a note..." 
-          rows={isFocused?"3":"1"} 
+          rows={(isFocused || alsoFocused)?"3":"1"} 
           required
         />
-        <Zoom in={isFocused?true:false}>
+        <Zoom in={(isFocused || alsoFocused)?true:false}>
           <Fab color="warning" aria-label="add">
             <AddIcon />
           </Fab>
