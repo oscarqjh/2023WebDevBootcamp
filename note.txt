@@ -614,7 +614,49 @@ react props
 function Note(props) {
 	return <h1>props.prop1</h1>;
 }
-<Note prop1="test" />
+<Note prop1="test" /> 
 
+array.map(<somefucntion>); // create a new array by doing something with each item in an array
+array.filter(<somefunction>); // create a new array by keeping items that return true only
+array.reduce(<somefunction>); // accumulate a value by doing something to each item in an array
+array.find(<somefunction>); // returns the item that first matches the condition
+array.findIndex(<somefunction>); // return the index of item that first match the condition
 
+&& operator -> (in React) since right hand side is only evaluated if left side is true, && can be used for shorthanded ternery operation if only 1 element is to be shown based on certain condition
 
+State in React - declarative vs imperative programming
+changing state of variable by some user action
+const state = useState(123) // param is initial state, returns a array of [state, function]
+destructuring - const [red, green, blue] = [0, 0, 0] // allow mapping of var to array
+
+event handler
+fucntion eventHandler(event) {
+	console.log(event.target.value); // get certain property of element with event.target
+	console.log(event.target.type);
+}
+prevent default of form in react
+<form
+        onSubmit={(event) => {
+          setTitleName(name);
+          event.preventDefault();
+        }}
+      >
+
+react class
+class App extends React.Component {
+	render();
+} // to create react class
+
+onChange={(event) => {
+            const { value } = event.target;
+            setname((pre) => {
+              return {
+                fname: value,
+                lname: pre.lname
+              };
+            });
+          }}    			// make sure event is not inside a useState function
+
+react spread operator
+const array1 = ["1", "2", "3"];
+const array2 = ["4", "5", "6", ...array1]; // this combines array1 and array2, works for object too
