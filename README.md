@@ -43,10 +43,10 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 
 ### Section 2: Projects
 
-Throughout this course, I've made many projects, some with and without the guidance of video lectures. Since there are too many small projects, I'll only showcase some notable ones below.   
+Throughout this course, I've created many projects, some with and without the guidance of video lectures. Since there are too many small projects, I'll only showcase some notable ones below.   
 
 #### 2.1 Keeper App
-This is a pure front-end note taking app made to practise React.js. Since backend is not implemented, data cannot be persisted past any one session. However, through this project, I learnt alot about **React.js** and **Material UI**, a React component library.   
+This is a pure front-end note-taking app made to practice React.js. Since the backend is not implemented, data cannot be persisted past any one session. However, through this project, I learned a lot about **React.js** and **Material UI**, a React component library.   
 
 <img src="./assets/keeper.png" width="1000" height="500">    
 
