@@ -8,7 +8,7 @@
 
 ![Cover](./assets/Cover.png)
 
-The Complete 2023 Web Development Bootcamp on Udemy is a course for aspiring full-stack web developers. This course is taught by the leader instructor (Angela Yu) at the App Brewey, London's leading in-person programming bootcamp. Learn more about the course [here](https://appbrewery.com/).
+The Complete 2023 Web Development Bootcamp on Udemy is a course for aspiring full-stack web developers. This course is taught by the lead instructor (Angela Yu) at the App Brewery, London's leading in-person programming boot camp. Learn more about the course [here](https://appbrewery.com/).
 
 #### 1.2 Technologies Learned
 
