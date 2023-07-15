@@ -22,6 +22,7 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 - Node.js
 - React.js
 - MongoDB
+- Motoko
 <details>
 <summary>Show more:</summary>
 
@@ -35,7 +36,7 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 + Mongoose
 + React Hooks
 + Deployment with GitHub Pages, Heroku and MongoDB Atlas
-+ Web3 Development on the Internet Computer
++ Web3 Development on Dfinity's Internet Computer
 + Blockchain technology
 </details>   
 
