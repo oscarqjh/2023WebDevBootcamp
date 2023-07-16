@@ -1,14 +1,14 @@
 # 2023WebDevBootcamp
 
-## Section 1: About
+## Section 1: Introduction
 
-#### 1.1 Introduction
+#### 1.1 About
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ![Cover](./assets/Cover.png)
 
-The Complete 2023 Web Development Bootcamp on Udemy is a course for aspiring full-stack web developers. This course is taught by the leader instructor (Angela Yu) at the App Brewey, London's leading in-person programming bootcamp. Learn more about the course [here](https://appbrewery.com/).
+The Complete 2023 Web Development Bootcamp on Udemy is a course for aspiring full-stack web developers. This course is taught by the lead instructor (Angela Yu) at the App Brewery, London's leading in-person programming boot camp. Learn more about the course [here](https://appbrewery.com/).
 
 #### 1.2 Technologies Learned
 
@@ -22,6 +22,7 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 - Node.js
 - React.js
 - MongoDB
+- Motoko
 <details>
 <summary>Show more:</summary>
 
@@ -35,7 +36,7 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 + Mongoose
 + React Hooks
 + Deployment with GitHub Pages, Heroku and MongoDB Atlas
-+ Web3 Development on the Internet Computer
++ Web3 Development on Dfinity's Internet Computer
 + Blockchain technology
 </details>   
 
@@ -43,10 +44,10 @@ Through this course, I've learned numerous technologies, tools and frameworks wh
 
 ### Section 2: Projects
 
-Throughout this course, I've made many projects, some with and without the guidance of video lectures. Since there are too many small projects, I'll only showcase some notable ones below.   
+Throughout this course, I've created many projects, some with and without the guidance of video lectures. Since there are too many small projects, I'll only showcase some notable ones below.   
 
 #### 2.1 Keeper App
-This is a pure front-end note taking app made to practise React.js. Since backend is not implemented, data cannot be persisted past any one session. However, through this project, I learnt alot about **React.js** and **Material UI**, a React component library.   
+This is a pure front-end note-taking app made to practice React.js. Since the backend is not implemented, data cannot be persisted past any one session. However, through this project, I learned a lot about **React.js** and **Material UI**, a React component library.   
 
 <img src="./assets/keeper.png" width="1000" height="500">    
 
@@ -93,7 +94,12 @@ This is a website to make your to-do list. This is the first proper project made
 Check out the website [here](https://oscarqjh-todolist.onrender.com).   
 Source code can be found [here](https://github.com/oscarqjh/2023WebDevBootcamp-TodoList).   
 
+#### 2.6 OCToken Bank
+This is a project built with Motoko and Dfinity's Internet Computer.
 
+<img src="./assets/OCToken.png" width="600" height="300">
+
+Source code can be found [here](https://github.com/oscarqjh/2023WebDevBootcamp-OCToken).
 ---
 
 ### Acknowledgment
