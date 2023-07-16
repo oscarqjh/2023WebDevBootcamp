@@ -100,6 +100,7 @@ This is a project built with Motoko and Dfinity's Internet Computer.
 <img src="./assets/OCToken.png" width="600" height="300">
 
 Source code can be found [here](https://github.com/oscarqjh/2023WebDevBootcamp-OCToken).
+
 ---
 
 ### Acknowledgment
