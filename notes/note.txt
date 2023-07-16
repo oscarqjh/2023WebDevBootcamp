@@ -663,6 +663,46 @@ const array2 = ["4", "5", "6", ...array1]; // this combines array1 and array2, w
 
 npm install @material-ui/icons
 
+react to github pages
 "homepage": "https://oscarqjh.github.io/2023WebDevBootcamp-KeeperApp",
 "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+
+Web3.0
+dfx init steps
+Using Ubunto:
+1) create directory and cd into it
+2) dfx new <appname>
+3) cd ito new directory
+4) open folder in vscode
+5) code
+6) in terminal, dfx start
+7) dfx deploy
+8) npm start
+
+motoko doc - https://internetcomputer.org/docs/current/motoko/intro/Bounded%20Integers
+
+create new canistor -> actor <varName> {}
+var variableName = 1; // variable
+let constName = 21; // let is const in motoko
+
+assignment in motoko
+:= assignment
++-*/= inplace math operation
+%= modulo
+**= exponent
+&= inplace logical and
+
+motoko print
+import Debug "mo:base/Debug";
+Debug.print(debug_show(currentValue));
+
+public function
+public func topUp(param: paramType) {}; // then we can call this function in the terminal with dfx canister call <folderName> <functionName>
+
+Candid UI
+dfx canister id __Candid_UI // to get id key
+http://127.0.0.1:8000/?canisterid=<id>
+dfx canister id <folderName>
+
+stable var // allows orthogonal persistance
